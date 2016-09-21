@@ -1,0 +1,12 @@
+{
+  "generator-ng-fullstack": {
+    "username": "drummernash",
+    "appName": "fishing-tournament-ng1",
+    "stack": "fullstack",
+    "server": "node",
+    "client": "ng1",
+    "transpilerServer": "node",
+    "secure": false,
+    "differentStaticServer": false
+  }
+}
