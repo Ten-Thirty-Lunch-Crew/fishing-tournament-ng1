@@ -24,6 +24,11 @@
                required
                autofocus />
 
+       <h4>Start Date/Time</h4>
+       <div style="display:inline-block; min-height:290px;">
+         <div uib-datepicker ng-model="todoCtrl.dt" class="well well-sm"></div>
+       </div>
+
         <ng-messages for="TodoForm.todoMsg.$error">
           <ng-message when="required" class="error-msg">Todo field is required</ng-message>
           <ng-message when="minlength" class="error-msg">Min of 5 chars</ng-message>

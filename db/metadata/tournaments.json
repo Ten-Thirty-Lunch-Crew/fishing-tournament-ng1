@@ -2,12 +2,12 @@
   {"name": "Spring Bass Club",
     "dates":
       [
-        {"startDateTime": "2017-04-01T06:00:00Z",
-          "endDateTime": "2017-04-01T15:00:00Z"},
-        {"startDateTime": "2017-04-02T06:00:00Z",
-          "endDateTime": "2017-04-02T15:00:00Z"},
-        {"startDateTime": "2017-04-03T06:00:00Z",
-          "endDateTime": "2017-04-03T15:00:00Z"}
+        {"startDateTime": "2017-04-01T11:00:00Z",
+          "endDateTime": "2017-04-01T20:00:00Z"},
+        {"startDateTime": "2017-04-02T11:00:00Z",
+          "endDateTime": "2017-04-02T20:00:00Z"},
+        {"startDateTime": "2017-04-03T11:00:00Z",
+          "endDateTime": "2017-04-03T20:00:00Z"}
       ],
     "tourneyRules": "Be sure to get back to the dock before 3 PM!  Weigh-in starts at 3:30 PM. Limit of 5 fish, fish must be alive or the fish will be disqualified.",
     "measurement":
@@ -17,8 +17,8 @@
   {"name": "Ulysses Everett McGill's Bonafide Bass Blowout",
     "dates":
       [
-        {"startDateTime": "2017-05-01T18:30:00Z",
-          "endDateTime": "2017-05-02T00:30:00Z"}
+        {"startDateTime": "2017-05-01T23:30:00Z",
+          "endDateTime": "2017-05-02T05:30:00Z"}
       ],
     "tourneyRules": "Get your bass out of the Woolsworth and join us for this great tournament.  Bass allowed must be greater than 14 inches in length, weigh in starts at 12:45 AM. Dead fish will not be weighed.",
     "measurement":
@@ -29,10 +29,10 @@
   {"name": "Brian's Big Bass Rhodeo",
     "dates":
       [
-        {"startDateTime": "2016-09-17T16:00:00Z",
-          "endDateTime": "2016-09-18T00:00:00Z"},
-        {"startDateTime": "2016-09-18T16:00:00Z",
-          "endDateTime": "2016-09-19T00:00:00Z"}
+        {"startDateTime": "2016-09-17T21:00:00Z",
+          "endDateTime": "2016-09-18T05:00:00Z"},
+        {"startDateTime": "2016-09-18T21:00:00Z",
+          "endDateTime": "2016-09-19T05:00:00Z"}
       ],
     "tourneyRules": "Get them big bass lures out because this one's gonna be a big one.  The most weight wins, period. No limit on amount caught, just weigh, record, and throw it back. May the heaviest man win.",
     "measurement":
@@ -42,8 +42,8 @@
   {"name": "Not Sure's Time Masheen Tournament, Brought to you by Carl's Jr.",
     "dates":
       [
-        {"startDateTime": "2016-11-01T00:00:00Z",
-          "endDateTime": "2016-12-01T00:00:00Z"}
+        {"startDateTime": "2016-11-01T05:00:00Z",
+          "endDateTime": "2016-12-01T05:00:00Z"}
       ],
     "tourneyRules": "For the entire month of November, Not Sure wants you to catch as many fish as you can.  That is, however, as long as they are greater than 14 inches in length, and less than 24 inches in length. Total measurement wins all! Measure, record, and release!",
     "measurement":
@@ -55,8 +55,8 @@
   {"name": "Pappy O'Daniel's Pass the Biscuits Flour Hour New Year Bass Tournament",
     "dates":
       [
-        {"startDateTime": "2016-12-31T18:00:00Z",
-          "endDateTime": "2017-01-01T02:00:00Z"}
+        {"startDateTime": "2016-12-31T23:00:00Z",
+          "endDateTime": "2017-01-01T07:00:00Z"}
       ],
     "tourneyRules": "Come on out this New Year's Eve and press the flesh...against a bass!  Best 5 bass weight wins!  Listen to some old timey music at the weigh in and remember, when you're fixin' to fry up some flapjacks or bake a mess a biscuits, use cool clear water and good pure Pappy O'Daniel flour for that 'Pass the Biscuits, Pappy' flavor.",
     "measurement":
@@ -66,8 +66,8 @@
   {"name": "Drew's Harley Davidson Haulin' Bass and Fightin' Hogs Classic",
     "dates":
       [
-        {"startDateTime": "2017-02-28T18:30:00Z",
-          "endDateTime": "2017-03-01T01:30:00Z"}
+        {"startDateTime": "2017-02-28T23:30:00Z",
+          "endDateTime": "2017-03-01T06:30:00Z"}
       ],
     "tourneyRules": "Rev 'em up and reel 'em in boys! Bring your hogs down to the dock and get out there and catch some hogs!  Best 5 fish bag weight wins a brand new Road King, courtesy of Carl's Jr.  But, it wouldn't be a fishing tournament without a 'catch'.  All fish must be over 4 pounds to be counted, because we're catching hogs here, not little dinks.  Dead fish will not be weighed.",
     "measurement":
@@ -78,8 +78,8 @@
   {"name": "9Jeff Reynolds' Leap Year DAO Shootout",
     "dates":
       [
-        {"startDateTime": "2016-02-28T17:59:59Z",
-          "endDateTime": "2017-03-01T12:00:00Z"}
+        {"startDateTime": "2016-02-28T22:59:59Z",
+          "endDateTime": "2017-03-01T17:00:00Z"}
       ],
     "tourneyRules": "I don't know about ADO so I won't waste your time, but if you love DAO get your VBA loving asses down to the docks for the Leap Year challenge!  The greatest total length wins, just measure, record, and release.  Fish must be greater than 14 inches in length in order to be counted.",
     "measurement":

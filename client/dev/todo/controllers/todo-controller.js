@@ -12,6 +12,8 @@
         self.todo = new Todo();
         self.todos = [];
 
+        self.dt = new Date("11/2/2016");
+
         self.createTodo = function(todo) {
           TodoDAO
             .createTodo(todo)
@@ -30,7 +32,7 @@
               return self.todos;
             })
             .catch($log.error);
-        }
+        };
 
         self.deleteTodo = function(id) {
           TodoDAO

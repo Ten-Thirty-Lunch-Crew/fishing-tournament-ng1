@@ -1,0 +1,13 @@
+.tournament-in-tournaments:hover .tournament-done {
+  opacity: 1;
+}
+
+.tournament-done:hover {
+  background-color: red;
+}
+
+
+.tournament-done:hover {
+  background-color: rgba(228, 43, 43, 1);
+  color: #fff;
+}

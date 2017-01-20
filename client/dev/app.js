@@ -4,6 +4,12 @@
   ng.module('fishing-tournament-ng1', [
       'ngResource',
       'ngRoute',
-      'ngMessages'
+      'ngMessages',
+      'ngAnimate',
+      'ngSanitize',
+      'ngTouch',
+      'ui.bootstrap',
+      'ui.bootstrap.datepicker',
+      'ui.bootstrap.datetimepicker'
     ]);
 }(window.angular));

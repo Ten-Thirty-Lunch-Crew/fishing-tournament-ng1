@@ -1,0 +1,105 @@
+<div class="container">
+
+  <div class="tournament-panel transition">
+
+    <form name="TournamentForm"
+          ng-submit="tournamentCtrl.createTournament(tournamentCtrl.tournament)" >
+
+      <div class="title-container">
+        <h1 class="text-muted text-center">Fishing Tournament</h1>
+      </div>
+
+      <hr />
+
+      <div class="tournament-container">
+
+        <input type="text"
+               class="form-control input-lg"
+               placeholder="Tournament Name"
+               ng-model="tournamentCtrl.tournament.name"
+               name="name"
+               maxlength="1000"
+               ng-maxlength="1000"
+               ng-minlength="5"
+               required
+               autofocus />
+
+        <br /><br />
+
+        Date fields:
+        <br />
+        <h4>Start Date/Time</h4>
+        <datetimepicker ng-model="tournamentCtrl.startDate"
+                date-format="dd-MMM-yyyy"
+                date-disabled="tournamentCtrl.isDisabledDate(date, mode)">
+        </datetimepicker>
+        <br />
+        <h4>End Date/Time</h4>
+        <datetimepicker ng-model="tournamentCtrl.endDate"
+                date-format="dd-MMM-yyyy"
+                date-disabled="tournamentCtrl.isDisabledEndDate(date)">
+        </datetimepicker>
+        <br />
+        <button type="button"
+                id="add-date-range-button"
+                class="btn btn-primary"
+                ng-click="tournamentCtrl.addDateRange()"> Add Date Range </button>
+        <br /><br />
+        <ul ng-repeat="dt in tournamentCtrl.tournament.dates">
+          <li>Start: {{dt.startDateTime | date : 'medium'}}, End: {{dt.endDateTime | date : 'medium'}}</li>
+        </ul>
+        <br /><br />
+        <pre>{{tournamentCtrl.tournament.dates | json}}</pre>
+        <br /><br />
+
+        <ng-messages for="TournamentForm.name.$error">
+          <ng-message when="required" class="error-msg">Tournament field is required</ng-message>
+          <ng-message when="minlength" class="error-msg">Min of 5 chars</ng-message>
+          <ng-message when="maxlength" class="error-msg">Max of 1000 chars</ng-message>
+        </ng-messages>
+
+        <br /><br />
+
+        <div>
+          <button type="submit"
+                  id="submit-tournament-button"
+                  class="btn btn-success btn-block btn-lg submit-tournament"
+                  ng-disabled="TournamentForm.$invalid || !tournamentCtrl.tournament.isValid()"> ADD </button>
+        </div>
+
+        <hr/>
+
+        <table class="table table-striped">
+          <tbody>
+            <tr ng-repeat="t in tournamentCtrl.tournaments">
+              <td class="text-muted tournament-in-tournaments">
+                <div>Tournament Name: {{t.name}}</div>
+                <div>
+                  <span>Tournament Dates and Times:</span>
+                  <ul ng-repeat="d in t.dates | orderBy: startDateTime">
+                    <li>Start Date/Time: {{d.startDateTime | date: 'MM/dd/yyyy h:mm a'}}</li>
+                    <li>End Date/Time: {{d.endDateTime | date: 'MM/dd/yyyy h:mm a'}}</li>
+                  </ul>
+                </div>
+                <div>Tournament Rules: {{t.tourneyRules}}</div>
+                <div>Measurement Type: {{t.measurement.type}}</div>
+                <div>Measurement Unit: {{t.measurement.unit}}</div>
+
+                <div class="tournament-done transition"
+                     ng-click="tournamentCtrl.deleteTournament(t._id)">x</div>
+              </td>
+
+            </tr>
+          </tbody>
+        </table>
+
+        <div ng-if="!tournamentCtrl.tournaments.length">
+          <h3 class="text-muted text-center">No Tournaments exist, create one above!</h3>
+        </div>
+
+      </div>
+
+    </form>
+
+  </div>
+</div>

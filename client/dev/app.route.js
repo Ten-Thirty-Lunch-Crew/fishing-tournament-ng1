@@ -7,9 +7,19 @@
       function($routeProvider) {
         $routeProvider
           .when('/', {
+            templateUrl: 'tournament/templates/tournament.html',
+            controller: 'TournamentController',
+            controllerAs: 'tournamentCtrl'
+          })
+          .when('/todo', {
             templateUrl: 'todo/templates/todo.html',
             controller: 'TodoController',
             controllerAs: 'todoCtrl'
+          })
+          .when('/tournament', {
+            templateUrl: 'tournament/templates/tournament.html',
+            controller: 'TournamentController',
+            controllerAs: 'tournamentCtrl'
           })
           .otherwise({
             redirectTo: '/'
