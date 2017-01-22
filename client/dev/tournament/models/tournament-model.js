@@ -7,7 +7,7 @@
         this.name = null;
         this.dates = [];
         this.tourneyRules = null;
-        this.measurement = {type: null, unit: null};
+        this.measurement = null;
         ng.extend(this, tournament);
       };
 

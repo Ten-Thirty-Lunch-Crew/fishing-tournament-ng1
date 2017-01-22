@@ -52,6 +52,42 @@
         <pre>{{tournamentCtrl.tournament.dates | json}}</pre>
         <br /><br />
 
+        Tournament Rules:
+        <br /><br />
+        <textarea ng-model="tournamentCtrl.tournament.tournamentRules" rows="4" cols="100"></textarea>
+        <br /><br />
+
+        Measurements:
+        <br /><br />
+        Type:
+        <br /><br />
+        <div class="btn-group">
+          <label class="btn btn-primary" ng-model="tournamentCtrl.tournament.measurement.type" uib-btn-radio="'weight'" uib-uncheckable="false" ng-change="tournamentCtrl.measurementTypeChange(tournamentCtrl.tournament.measurement.type)">Weight</label>
+          <label class="btn btn-primary" ng-model="tournamentCtrl.tournament.measurement.type" uib-btn-radio="'height'" uib-uncheckable="false" ng-change="tournamentCtrl.measurementTypeChange(tournamentCtrl.tournament.measurement.type)">Height</label>
+        </div>
+        <br /><br />
+
+        <div ng-show="tournamentCtrl.tournament.measurement.type != null">
+          Unit:
+          <br /><br />
+          <div class="btn-group" ng-show="tournamentCtrl.tournament.measurement.type == 'weight'">
+            <label class="btn btn-primary" ng-model="tournamentCtrl.tournament.measurement.unit" uib-btn-radio="'pounds'" uib-uncheckable="false">Pounds</label>
+          </div>
+          <div class="btn-group" ng-show="tournamentCtrl.tournament.measurement.type == 'height'">
+            <label class="btn btn-primary" ng-model="tournamentCtrl.tournament.measurement.unit" uib-btn-radio="'inches'" uib-uncheckable="false">Inches</label>
+          </div>
+        </div>
+
+        <br /><br />
+        Minimum:
+        <br /><br />
+        <input type="text" ng-model="tournamentCtrl.tournament.measurement.minValue"></input>
+        <br /><br />
+        Maximum:
+        <br /><br />
+        <input type="text" ng-model="tournamentCtrl.tournament.measurement.maxValue"></input>
+        <br /><br />
+
         <ng-messages for="TournamentForm.name.$error">
           <ng-message when="required" class="error-msg">Tournament field is required</ng-message>
           <ng-message when="minlength" class="error-msg">Min of 5 chars</ng-message>
@@ -84,6 +120,8 @@
                 <div>Tournament Rules: {{t.tourneyRules}}</div>
                 <div>Measurement Type: {{t.measurement.type}}</div>
                 <div>Measurement Unit: {{t.measurement.unit}}</div>
+                <div>Minimum {{t.measurement.type}}: {{t.measurement.minValue}}</div>
+                <div>Maximum {{t.measurement.type}}: {{t.measurement.maxValue}}</div>
 
                 <div class="tournament-done transition"
                      ng-click="tournamentCtrl.deleteTournament(t._id)">x</div>
