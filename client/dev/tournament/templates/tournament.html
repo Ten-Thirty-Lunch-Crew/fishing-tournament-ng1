@@ -123,8 +123,9 @@
                 <div>Minimum {{t.measurement.type}}: {{t.measurement.minValue}}</div>
                 <div>Maximum {{t.measurement.type}}: {{t.measurement.maxValue}}</div>
 
-                <div class="tournament-done transition"
-                     ng-click="tournamentCtrl.deleteTournament(t._id)">x</div>
+                <button type="button" class="btn btn-danger" aria-label="Remove Tournament" ng-click="tournamentCtrl.deleteTournament(t._id)">
+                  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Remove Tournament
+                </button>
               </td>
 
             </tr>
