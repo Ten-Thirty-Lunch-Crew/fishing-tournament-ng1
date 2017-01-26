@@ -7,9 +7,7 @@
       function($routeProvider) {
         $routeProvider
           .when('/', {
-            templateUrl: 'tournament/templates/tournament.html',
-            controller: 'TournamentController',
-            controllerAs: 'tournamentCtrl'
+            templateUrl: 'common/templates/home.html'
           })
           .when('/todo', {
             templateUrl: 'todo/templates/todo.html',
