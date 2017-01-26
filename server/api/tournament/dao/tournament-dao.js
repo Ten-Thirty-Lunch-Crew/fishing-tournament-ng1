@@ -18,6 +18,20 @@ tournamentSchema.statics.getAll = () => {
       });
 }
 
+tournamentSchema.statics.getOneById = (id) => {
+  return new Promise((resolve, reject) => {
+      if (!_.isString(id))
+          return reject(new TypeError('Id is not a valid string.'));
+
+      Tournament
+        .findOne({_id : id})
+        .exec((err, tournament) => {
+            err ? reject(err)
+                : resolve(tournament);
+        });
+  });
+}
+
 tournamentSchema.statics.createTournament = (tournament) => {
     return new Promise((resolve, reject) => {
       if (!_.isObject(tournament))

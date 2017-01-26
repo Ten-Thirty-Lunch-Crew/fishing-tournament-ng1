@@ -11,6 +11,7 @@ module.exports = class TournamentRoutes {
 
       router
         .route('/api/tournaments/:id')
+        .get(TournamentController.getOneById)
         .delete(TournamentController.deleteTournament);
     }
 }

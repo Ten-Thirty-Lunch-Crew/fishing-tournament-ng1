@@ -10,6 +10,15 @@ module.exports = class TournamentController {
         .catch(error => res.status(400).json(error));
   }
 
+  static getOneById(req, res) {
+      let _id = req.params.id;
+
+      TournamentDAO
+        .getOneById(_id)
+        .then(tournament => res.status(200).json(tournament))
+        .catch(error => res.status(400).json(error));
+  }
+
   static createTournament(req, res) {
       let _tournament = req.body;
 
