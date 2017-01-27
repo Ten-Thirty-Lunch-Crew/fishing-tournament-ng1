@@ -1,0 +1,106 @@
+[
+  {
+    "user_id": "444444444444444444444440",
+    "tournament_id": "555555555555555555555530",
+    "measurement": "4.5",
+    "catchDateTime": "2016-09-17T23:15:20Z",
+    "imageUrls":
+      [
+        {"Url": "http://google.com"}
+      ],
+    "catchLocation": { "x": 34.836643, "y": -87.491987 }
+  },
+  {
+    "user_id": "444444444444444444444440",
+    "tournament_id": "555555555555555555555530",
+    "measurement": "2.0",
+    "catchDateTime": "2016-09-18T02:10:45Z",
+    "imageUrls":
+      [
+        {"Url": "http://google.com"},
+        {"Url": "http://google.com"}
+      ],
+    "catchLocation": { "x": 34.844891, "y": -87.522428 }
+  },
+  {
+    "user_id": "444444444444444444444450",
+    "tournament_id": "555555555555555555555530",
+    "measurement": "1.8",
+    "catchDateTime": "2016-09-18T22:15:00Z",
+    "imageUrls":
+      [
+        {"Url": "http://google.com"}
+      ],
+    "catchLocation": { "x": 34.842752, "y": -87.541169 }
+  },
+  {
+    "user_id": "444444444444444444444450",
+    "tournament_id": "555555555555555555555530",
+    "measurement": "3.2",
+    "catchDateTime": "2016-09-18T23:46:00Z",
+    "imageUrls":
+      [
+        {"Url": "http://google.com"}
+      ],
+    "catchLocation": { "x": 34.838693, "y": -87.556520 }
+  },
+  {
+    "user_id": "444444444444444444444450",
+    "tournament_id": "555555555555555555555530",
+    "measurement": "4.4",
+    "catchDateTime": "2016-09-19T01:23:10Z",
+    "imageUrls":
+      [
+        {"Url": "http://google.com"},
+        {"Url": "http://google.com"},
+        {"Url": "http://google.com"},
+        {"Url": "http://google.com"}
+      ],
+    "catchLocation": { "x": 34.789766, "y": -87.607919 }
+  },
+  {
+    "user_id": "444444444444444444444110",
+    "tournament_id": "555555555555555555555530",
+    "measurement": "5.8",
+    "catchDateTime": "2016-09-18T03:12:00Z",
+    "imageUrls":
+      [
+        {"Url": "http://google.com"}
+      ],
+    "catchLocation": { "x": 34.791795, "y": -87.621010 }
+  },
+  {
+    "user_id": "444444444444444444444110",
+    "tournament_id": "555555555555555555555530",
+    "measurement": "6.2",
+    "catchDateTime": "2016-09-18T04:55:00Z",
+    "imageUrls":
+      [
+        {"Url": "http://google.com"},
+        {"Url": "http://google.com"}
+      ],
+    "catchLocation": { "x": 34.806725, "y": -87.625202 }
+  },
+  {
+    "user_id": "444444444444444444444110",
+    "tournament_id": "555555555555555555555530",
+    "measurement": "2.8",
+    "catchDateTime": "2016-09-18T21:05:00Z",
+    "imageUrls":
+      [
+        {"Url": "http://google.com"}
+      ],
+    "catchLocation": { "x": 34.798513, "y": -87.384847 }
+  },
+  {
+    "user_id": "444444444444444444444110",
+    "tournament_id": "555555555555555555555530",
+    "measurement": "7.8",
+    "catchDateTime": "2016-09-18T23:18:59Z",
+    "imageUrls":
+      [
+        {"Url": "http://google.com"}
+      ],
+    "catchLocation": { "x": 34.812499, "y": -87.439421 }
+  }
+]
